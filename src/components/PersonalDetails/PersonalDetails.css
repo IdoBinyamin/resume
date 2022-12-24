@@ -1,0 +1,26 @@
+@media (min-width: 700px) {
+  /* web */
+  .personal-details-container {
+    background-color: rgb(115, 115, 231);
+    width: 45%;
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  .personal-details-container {
+    width: 780px;
+    background-color: rgb(115, 115, 231);
+  }
+}
+@media (min-width: 700px) {
+  /* web */
+  .technologies {
+    /* justify-content: space-evenly; */
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  .technologies {
+    /* justify-content: space-between; */
+  }
+}

@@ -1,0 +1,58 @@
+@media (min-width: 700px) {
+  /* web */
+  .about-me-page {
+    background-color: aqua;
+    justify-content: center;
+    width: 75%;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  .about-me-page {
+    background-color: aqua;
+    width: 780px;
+  }
+}
+@media (min-width: 700px) {
+  /* web */
+  #about-me-container {
+    width: 526px;
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  #about-me-container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  /* web */
+  #abot-me-phar {
+    width: 480px;
+   
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  #abot-me-phar {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  /* web */
+  #info-detailes {
+    width: 526px;
+    /* justify-content: center; */
+    /* text-align: center; */
+  }
+}
+@media (max-width: 700px) {
+  /*  mobile */
+  #info-detailes {
+    justify-content: center;
+    text-align: center;
+  }
+}

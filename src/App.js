@@ -3,17 +3,20 @@ import AboutMe from './components/AboutMe/AboutMe';
 import PersonalDetails from './components/PersonalDetails/PersonalDetails';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/Home/Home';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 function App() {
   return (
-
-    <BrowserRouter>
-      <Routes>
-        <Route path='' element={<Home />} />
-        <Route path='PersonalDetails' element={<PersonalDetails />} />
-        <Route path='AboutMe' element={<AboutMe />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='' element={<Home />} />
+          <Route path='PersonalDetails' element={<PersonalDetails />} />
+          <Route path='AboutMe' element={<AboutMe />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
 
   );
 }

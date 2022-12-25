@@ -1,7 +1,7 @@
 import React from 'react'
-import './ProjectShow.css'
+import './ItemsShow.css'
 
-export default function ProjectShow({ item }) {
+export default function ItemsShow({ item }) {
     return (
         <table>
             <thead>

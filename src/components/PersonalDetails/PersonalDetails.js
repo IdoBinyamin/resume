@@ -4,35 +4,31 @@ import { AiTwotonePhone, AiFillGithub, AiOutlineHtml5, AiOutlineLinkedin, AiTwot
 import { SiGmail, SiMongodb, SiRedux, SiReduxsaga } from "react-icons/si"
 import { DiJavascript1, DiReact, DiCss3 } from "react-icons/di"
 import { TbBrandReactNative } from "react-icons/tb"
-
+import { useSelector } from 'react-redux'
 
 
 export default function PersonalDetails() {
-
-
+  const userDetails = useSelector((state) => state.userInfo.user)
 
   return (
     <div className='personal-details-container'>
-      <h1>Ido Binyamin</h1>
-      <h2>Full Stack Developer</h2>
+      <h1>{userDetails.fullName}</h1>
+      <h2>{userDetails.role}</h2>
       <div>
 
         <h2>Personal details</h2>
 
-        <p><SiGmail /> idodavidbinyamin@gmail.com</p>
-        <p><AiTwotonePhone /> 050-3836970</p>
-        <p> <AiTwotoneHome /> Rehovot</p>
+        <p><SiGmail />{' '} {userDetails.mail}</p>
+        <p><AiTwotonePhone /> {' '} {userDetails.phone}</p>
+        <p> <AiTwotoneHome /> {' '} {userDetails.city}</p>
         <p>
-          <AiOutlineLinkedin /> Linkedin profile:{' '}
-          <a href=' linkedin.com/in/ido-binyamin-783425248'>
-            Here
-          </a>
+          <AiOutlineLinkedin /> {' '}
+          {userDetails.linkdin}
+
         </p>
         <p>
-          <AiFillGithub /> Github profile: {' '}
-          <a href='github.com/IdoBinyamin'>
-            Here
-          </a>
+          <AiFillGithub />{' '} {userDetails.github}
+
         </p>
       </div>
       <div>
